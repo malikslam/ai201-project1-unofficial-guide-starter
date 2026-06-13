@@ -307,7 +307,6 @@ grades tests pretty leniently. Do all the
 homework and show up to every class and
 you will likely pass. She is a great
 Professor.
-Reviewed:
 COP2360 Dec 9th, 2017
 Would Take Again: Yes
 Grade: Not sure yet Textbook: Yes
@@ -613,7 +612,6 @@ to slow down she does not. She even
 deducted points on the homework for
 items that were not covered until the next
 chapter.
-Reviewed:
 COP2837 Dec 8th, 2010
 Obviously people who complain about a
 60% drop rate haven't been to a 4 year

@@ -47,6 +47,8 @@ TEST_QUERIES = [
     "What is the workload like in Donald Lafond's networking classes at FSCJ?",
     "Is Philip Ritchey at Texas A&M an easy or a hard grader?",
     "What do students say about Aakash Tyagi's exams and teaching?",
+    "Who is the most supporting faulty?",
+    "Which institution would you recommend and whose course to take"
 ]
 
 
@@ -60,7 +62,7 @@ def main() -> None:
             print(f"\n[dist {r.distance:.3f}] {m.get('professor')} "
                   f"({m.get('school')}) — {m.get('course')} {m.get('date')} "
                   f"| {m.get('source')}")
-            print(f"  {r.text[:280]}")
+            print(f"  {r.text[:500]}")
         print()
 
 

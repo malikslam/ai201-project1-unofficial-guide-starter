@@ -50,6 +50,7 @@ _DROP_SUBSTR = (
     "I'm Professor",
     "Helpful",                     # "Helpful 0 0" vote counts
     "ratings",                     # "on 177 ratings"
+    "Reviewed:",                   # "Reviewed: Jun 4th, 2026" per-review footer
 )
 
 # Lines exactly equal to one of these are dropped.
@@ -64,6 +65,10 @@ _DROP_PATTERNS = (
     re.compile(r"^\d{1,3}%\s+\d\.\d$"),                          # "93% 2.3"
     re.compile(r"^\d\.\d{1,2}$"),                                # scores "4.0","4.80"
     re.compile(r"^\d+$"),                                        # stray integers
+    re.compile(                                                  # orphaned date fragment
+        r"^(?:Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec)"
+        r"\s+\d{1,2}(?:st|nd|rd|th),(?:\s+\d{4})?$"
+    ),
 )
 
 # Review metadata lines: keep only the informative ones (grade / would-take-again).
