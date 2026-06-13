@@ -16,6 +16,9 @@ env/
 chroma_db/
 chroma/
 
+# Editor — machine-specific (hardcoded venv path)
+.vscode/
+
 # macOS
 .DS_Store
 
