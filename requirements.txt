@@ -1,11 +1,15 @@
-sentence-transformers==3.4.1
-chromadb>=0.6.0
+# Pinned to a set that resolves cleanly together (verified with `pip check`).
+# gradio 6.x requires huggingface-hub 1.x, which in turn needs transformers 5.x
+# and sentence-transformers 5.x — so these versions move together.
+sentence-transformers==5.5.1
+transformers==5.12.0
+chromadb==1.5.9
 groq==0.15.0
-python-dotenv==1.0.1
+python-dotenv==1.2.2
 
-# Query interface — add whichever you use for Milestone 5:
-gradio>=6.9.0
+# Query interface (Milestone 5)
+gradio==6.18.0
 # streamlit>=1.40.0
 
-# Document ingestion — add if your documents/ folder contains .pdf files:
-pdfplumber==0.11.4
+# Document ingestion (PDFs via pdfplumber)
+pdfplumber==0.11.9
